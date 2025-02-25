@@ -913,7 +913,7 @@
                             necesitas asesoramiento, completa el formulario y te
                             responderemos a la brevedad.
                         </p>
-                        <form>
+                        <form action="thanks.html" method="get">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -922,6 +922,7 @@
                                             class="form-control"
                                             id="name"
                                             placeholder="Tu nombre"
+                                            required
                                         />
                                         <label for="name">Tu nombre</label>
                                     </div>
@@ -933,6 +934,7 @@
                                             class="form-control"
                                             id="surname"
                                             placeholder="Tu apellido"
+                                            required
                                         />
                                         <label for="surname">Tu apellido</label>
                                     </div>
@@ -944,14 +946,11 @@
                                             class="form-control"
                                             id="email"
                                             placeholder="Tu correo electrónico"
+                                            required
                                         />
                                         <label for="email"
                                             >Tu correo electrónico</label
                                         >
-                                        <div
-                                            id="result"
-                                            style="color: red; font-size: 12px"
-                                        ></div>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -961,6 +960,7 @@
                                             class="form-control"
                                             id="phone"
                                             placeholder="Teléfono"
+                                            required
                                         />
                                         <label for="phone">Teléfono</label>
                                     </div>
@@ -972,6 +972,7 @@
                                             placeholder="Deja tu mensaje aquí"
                                             id="message"
                                             style="height: 200px"
+                                            required
                                         ></textarea>
                                         <label for="message">Mensaje</label>
                                     </div>
@@ -1088,7 +1089,6 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        <script src="js/contact-form.js"></script>
         <script src="js/cookiebanner.js"></script>
     </body>
 </html>
